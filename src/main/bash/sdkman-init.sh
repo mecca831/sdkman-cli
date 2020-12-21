@@ -40,9 +40,9 @@ if [[ "$SDKMAN_PLATFORM" == 'Linux' ]]; then
 		SDKMAN_PLATFORM+='64'
 	fi
 elif [[ "$SDKMAN_PLATFORM" == 'Darwin' ]]; then
-    if [[ "$(uname -m)" == 'arm64' ]]; then
-        SDKMAN_PLATFORM+='ARM64'
-    fi
+	if [[ "$(uname -m)" == 'arm64' ]]; then
+		SDKMAN_PLATFORM+='ARM64'
+	fi
 fi
 export SDKMAN_PLATFORM
 
